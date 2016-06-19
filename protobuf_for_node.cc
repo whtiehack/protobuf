@@ -209,7 +209,8 @@ namespace protobuf_for_node {
           }
           return Nan::False();
         case FieldDescriptor::CPPTYPE_ENUM:
-          return Nan::New<String>(GET(Enum)->name().c_str()).ToLocalChecked();
+          //return Nan::New<String>(GET(Enum)->name().c_str()).ToLocalChecked();
+          return Nan::New<v8::Int32>(GET(Enum)->number());
         }
 
         return Nan::Undefined();  // NOTREACHED
