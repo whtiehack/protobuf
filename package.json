@@ -1,6 +1,6 @@
 {
   "name": "protobuf",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "Protocol Buffers for NodeJS",
   "author": {
     "Matthias Ernst": "mernst@google.com"
@@ -17,6 +17,6 @@
     "test": "node test/unittest.js"
   },
   "dependencies": {
-    "nan": "*"
+    "nan": "~2.5.1"
   }
 }
